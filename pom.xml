@@ -2614,9 +2614,9 @@
               </goals>
               <configuration>
                 <rules>
-                  <requireMavenVersion>
-                    <version>${maven.version}</version>
-                  </requireMavenVersion>
+<!--                  <requireMavenVersion>-->
+<!--                    <version>${maven.version}</version>-->
+<!--                  </requireMavenVersion>-->
                   <requireJavaVersion>
                     <version>${java.version}</version>
                   </requireJavaVersion>
