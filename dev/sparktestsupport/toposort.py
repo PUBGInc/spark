@@ -53,8 +53,8 @@ def toposort(data):
     data = data.copy()
 
     # Ignore self dependencies.
-    for k, v in data.items():
-        v.discard(k)
+    # for k, v in data.items():
+    #     v.discard(k)
     # Find all items that don't depend on anything.
     extra_items_in_deps = _reduce(set.union, data.values()) - set(data.keys())
     # Add empty dependencies where needed.

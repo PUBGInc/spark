@@ -22,11 +22,10 @@ name: "Build"
 on:
   push:
     branches:
-      #    - '**'
-      - "not exist"
+      - "**"
 jobs:
   call-build-and-test:
     permissions:
       packages: write
     name: Run
-    uses: ./.github/workflows/build_and_test.yml
+    uses: ./.github/workflows/maven_test.yml
